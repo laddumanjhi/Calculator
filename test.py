@@ -1,4 +1,3 @@
-import math
 def Plus():
     total = 0
     print("\n[+] Addition Mode: Enter numbers to add. Type 'result' to see the final result.")
@@ -14,7 +13,7 @@ def Plus():
         except ValueError:
             print("Invalid input. Enter a number or 'result'.")
 
-def  Minus():
+def Minus():
     total = None
     print("\n[-] Subtraction Mode: Enter numbers to subtract. Type 'result' to see the final result.")
     while True:
@@ -33,7 +32,8 @@ def  Minus():
                 total -= num
             print(f"Current Total: {total}")
         except ValueError:
-            print("Invalid input. Enter a number or 'result'.")     
+            print("Invalid input. Enter a number or 'result'.")
+
 def Into():
     total = None
     print("\n[*] Multiplication Mode: Enter numbers to multiply. Type 'result' to see the final result.")
@@ -53,12 +53,12 @@ def Into():
                 total *= num
             print(f"Current Total: {total}")
         except ValueError:
-            print("Invalid input. Enter a number or 'result'.")         
+            print("Invalid input. Enter a number or 'result'.")
 
-    def Divide():
-     total = None
-     print("\n[/] Division Mode: Enter numbers to divide. Type 'result' to see the final result.")
-     while True:
+def Divide():
+    total = None
+    print("\n[/] Division Mode: Enter numbers to divide. Type 'result' to see the final result.")
+    while True:
         user_input = input("Enter a number (or 'result'): ").strip()
         if user_input.lower() == "result":
             if total is not None:
@@ -79,22 +79,18 @@ def Into():
         except ValueError:
             print("Invalid input. Enter a number or 'result'.")
 
-    def m_power_n():
-        print("\n[/] enter the numbers to calculate the power. type ")        
-    def perform():        
-     print("Available operations: plus, minus, into, divide,m power of n")
-     op = input("Choose operation: ").strip().lower()
-
-     if op == "plus":
-        Plus()
-     elif op == "minus":
-        Minus()
-     elif op == "into":
-        Into()
-     elif op == "divide":
-        Divide()
-     else:
-        print("Invalid operation selected.")
 if __name__ == "__main__":
     print("Simple Interactive Calculator")
-      
+    print("Available operations: plus, minus, into, divide")
+    op = input("Choose operation: ").strip().lower()
+
+    if op == "plus":
+        Plus()
+    elif op == "minus":
+        Minus()
+    elif op == "into":
+        Into()
+    elif op == "divide":
+        Divide()
+    else:
+        print("Invalid operation selected.")

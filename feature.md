@@ -23,3 +23,7 @@ Tackle algebraic expressions effortlessly:
 - **Linear Equations** → `ax + b = c` Solve for `x`.  
 - **Quadratic Equations** → `ax^2 + bx + c = 0`Use the quadratic formula.  
 - **Advanced Solvers** → Future support for polynomial equations!
+
+### corency change
+- **rupay change to **dolor**
+- **change to corency in the world**
